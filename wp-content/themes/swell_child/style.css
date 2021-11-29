@@ -1,0 +1,259 @@
+@charset "UTF-8";
+/*
+    Template: swell
+    Theme Name: SWELL CHILD
+    Theme URI: https://swell-theme.com/
+    Description: SWELLの子テーマ
+    Version: 1.0.0
+    Author: LOOS WEB STUDIO
+    Author URI: https://loos-web-studio.com/
+
+    License: GNU General Public License
+    License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
+/* Contact Form7 */
+
+.contact7 {
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-top: 5rem;
+}
+.contact7 dd {
+  margin: 0 0 30px 0;
+}
+.contact7 dt {
+  font-weight: normal;
+}
+
+/* 必須マーク */
+.contact7 .must {
+  background: #ff1a00;
+}
+
+/* 任意マーク */
+.contact7 .optional {
+  background: #999;
+}
+
+.contact7 .must,
+.contact7 .optional {
+  color: #fff;
+  border-radius: 3px;
+  font-size: 10px;
+  margin-left: 10px;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+}
+.btn_contact7 {
+  /* text-align: center; */
+}
+
+span.wpcf7-list-item {
+  margin: 0;
+}
+
+.btn_contact7 input {
+  margin-top: 2rem;
+  width: 40%;
+  background-color: #288deb;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  border: 1px solid #288deb;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn_contact7 input:hover {
+  background-color: #fff;
+  color: #288deb;
+}
+
+@media screen and (min-width: 768px) {
+  .contact7 dt {
+    float: left;
+    clear: left;
+    width: 35%;
+    padding: 5px 10px 5px 0;
+  }
+  .contact7 dd {
+    margin-left: 35%;
+  }
+
+  .btn_contact7 input {
+    width: 40%;
+    background-color: #288deb;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    border: 1px solid #288deb;
+    border-radius: 5px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .btn_contact7 input:hover {
+    background-color: #fff;
+    color: #288deb;
+  }
+}
+
+.c-pageTitle {
+  border-bottom: solid 1px var(--color_border);
+}
+
+.c-pageTitle__inner {
+  display: block;
+  float: left;
+  margin-bottom: -1px;
+  padding: 0.25em 0.5em;
+  border-bottom: solid 1px var(--color_main);
+}
+
+@media (max-width: 959px) {
+  .flexbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box1 {
+    order: 1;
+  }
+
+  .box2 {
+    order: 2;
+  }
+
+  .words {
+    margin-top: 2em;
+  }
+
+  .contact7 dt {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 599px) {
+  input,
+  textarea {
+    width: 90%;
+  }
+
+  input[type="checkbox"] {
+    width: auto;
+  }
+
+  .wp-block-contact-form-7-contact-form-selector p {
+    width: 95%;
+    font-size: 13px;
+  }
+
+  .btn_contact7 input {
+    font-size: 3.5vw;
+    width: 50%;
+  }
+}
+
+/* フッター */
+.l-footer {
+  padding: 4rem;
+  padding-bottom: 1rem;
+}
+
+.l-footer a.menu-link:hover,
+.l-footer span.menu-link a:hover {
+  color: #8dc4f7;
+}
+
+.footer-menu,
+.footer-sub-menu {
+  max-width: 944px;
+  margin: 0 auto;
+  display: flex;
+}
+.footer-menu {
+  margin-bottom: 2rem;
+}
+.footer-menu li {
+  margin-right: 2rem;
+}
+
+.page-top-btn {
+  margin-top: -20px;
+  margin-left: 11rem;
+}
+
+.page-top-btn svg {
+  width: 70px;
+  color: #fff;
+  transition: 0.3s;
+}
+.page-top-btn svg:hover {
+  width: 70px;
+  color: var(--color_link);
+}
+
+.footer-sub-menu {
+  margin-bottom: 1rem;
+}
+.footer-sub-menu a {
+  color: rgb(230, 230, 230);
+  font-size: 15px;
+}
+
+.l-footer .copyright {
+  max-width: 944px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: rgb(209, 209, 209);
+  text-align: left;
+}
+
+/* JavaScriptで定義しようとしてた箇所(トップページのみの設定ね) */
+#header {
+  display: none;
+}
+
+@media (max-width: 959px) {
+  #header {
+    display: block;
+  }
+  .l-content {
+    margin-bottom: auto;
+  }
+
+  .l-footer {
+    padding-right: var(--swl-pad_container, 0);
+    padding-left: var(--swl-pad_container, 0);
+  }
+  .footer-menu,
+  .footer-sub-menu {
+    display: block;
+    position: relative;
+  }
+  .footer-menu {
+    margin-bottom: 5rem;
+  }
+
+  .footer-menu li {
+    margin-bottom: 1rem;
+  }
+  .footer-menu li.page-top-btn {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    margin: 0;
+  }
+
+  .l-footer__foot .l-container {
+    padding-left: 0;
+  }
+}
